@@ -43,7 +43,7 @@ This project utilizes YOLOv12s (You Only Look Once), which offers:
 Below are the performance metrics of the trained model:
 
 <div align="center">
-  <img src="assets/metrics.png" alt="Model Performance Metrics" width="700"/>
+  <img src="https://github.com/mohamed-ehab415/Suger_beets/blob/main/runs/detect/train/F1_curve.png" alt="Model Performance Metrics" width="700"/>
 </div>
 
 ## ⚙️ Installation
