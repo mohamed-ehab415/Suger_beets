@@ -1,0 +1,16 @@
+from ultralytics import YOLO
+
+# Initialize the model with the appropriate config
+model = YOLO('yolov12s.yaml')
+
+# Train the model with custom parameters
+results = model.train(
+    data=f'{dataset}/data.yaml',
+    epochs=50,  # Adjust epochs to 50 for faster convergence
+    batch=16,   # Set batch size to 16 for better performance
+    imgsz=640,  # Use 640x640 image size for better performance (adjust based on GPU)
+    lr0=0.01,   # Starting learning rate
+    lrf=0.1,    # Adjust learning rate by this factor (decay factor)
+    momentum=0.937,  # Momentum for optimizer
+    weight_decay=0.0005  # Regularization to avoid overfitting
+)
