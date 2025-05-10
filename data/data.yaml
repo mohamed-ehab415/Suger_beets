@@ -1,0 +1,21 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['0', '1']
+
+roboflow:
+  workspace: vision-3gxqu
+test: ../test/images
+train: ../train/images
+val: ../valid/images
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['sugar_beets', 'weeds']
+
+roboflow:
+  workspace: vision-3gxqu

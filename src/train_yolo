@@ -14,3 +14,36 @@ results = model.train(
     momentum=0.937,  # Momentum for optimizer
     weight_decay=0.0005  # Regularization to avoid overfitting
 )
+import torch
+from pathlib import Path
+import cv2
+
+# Load model from custom repo
+MODEL_PATH = r'runs/detect/train/weights/best.pt'
+IMAGES_DIR = Path(r'data/test')
+OUTPUT_DIR = Path(r'inference_results')
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# Load the full model with architecture
+model = torch.load(MODEL_PATH, map_location='cpu')  # or 'cuda' if available
+model.eval()
+
+# Run inference on all images
+for img_path in IMAGES_DIR.glob('*.*'):
+    if img_path.suffix.lower() not in ['.jpg', '.jpeg', '.png']:
+        continue
+
+    img = cv2.imread(str(img_path))
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    img_tensor = torch.from_numpy(img_rgb).permute(2, 0, 1).float() / 255.0
+    img_tensor = img_tensor.unsqueeze(0)
+
+    with torch.no_grad():
+        pred = model(img_tensor)[0]  # Adapt this line to match your model's output format
+
+    # TODO: Apply NMS or any post-processing as required by YOLO12
+
+    out_path = OUTPUT_DIR / img_path.name
+    cv2.imwrite(str(out_path), img)
+
+print("✅ Inference complete.")
