@@ -1,21 +1,20 @@
 # Sugar Beet and Weed Classification using YOLOv12s
 
 <div align="center">
-  <img src="assets/banner.png" alt="Sugar Beet Classification Banner" width="800"/>
+  <img src="https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2024/02/Sugar-beet-plants-growing-on-black-fen-soil-Cambridgeshire-early-June-c-GNP-web.jpg" alt="Sugar Beet Classification Banner" width="800"/>
 </div>
 
 ## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Features](#features)
-- [Model Architecture](#model-architecture)
-- [Performance Metrics](#performance-metrics)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Training Process](#training-process)
-- [Results](#results)
-- [Future Work](#future-work)
-- [License](#license)
+- [Project Overview](##project-overview)
+- [Dataset](##dataset)
+- [Features](##features)
+- [Model Architecture](##model-architecture)
+- [Performance Metrics](##performance-metrics)
+- [Installation](##installation)
+- [Usage](##usage)
+- [Training Process](##training-process)
+- [Results](##results)
+- [Future Work](##future-work)
 - [Acknowledgments](#acknowledgments)
 
 ## 🌱 Project Overview
