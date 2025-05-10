@@ -39,11 +39,26 @@ This project utilizes YOLOv12s (You Only Look Once), which offers:
 - Excellent accuracy in complex agricultural scenes
 - Efficient architecture optimized for deployment
 
-## 📈 Performance Metrics
-Below are the performance metrics of the trained model:
+## 📈 Model Performance Metrics
 
+The following charts represent the performance of the trained model, showcasing key evaluation metrics.
+
+### F1-Score Curve
+The F1-Score curve demonstrates the model's balance between precision and recall, providing insights into its ability to classify both positive and negative instances correctly.
 <div align="center">
-  <img src="https://github.com/mohamed-ehab415/Suger_beets/blob/main/runs/detect/train/F1_curve.png" alt="Model Performance Metrics" width="700"/>
+  <img src="https://github.com/mohamed-ehab415/Suger_beets/blob/main/runs/detect/train/F1_curve.png" alt="F1 Score Curve" width="700"/>
+</div>
+
+### Precision-Recall Curve
+The Precision-Recall curve illustrates the trade-off between precision (positive prediction accuracy) and recall (true positive rate). This metric is especially useful when dealing with imbalanced datasets.
+<div align="center">
+  <img src="https://github.com/mohamed-ehab415/Suger_beets/blob/main/runs/detect/train/PR_curve.png" alt="Precision-Recall Curve" width="700"/>
+</div>
+
+### Model Training Results
+The table below summarizes the final evaluation results of the model, including accuracy, loss, and other key metrics:
+<div align="center">
+  <img src="https://github.com/mohamed-ehab415/Suger_beets/blob/main/runs/detect/train/results.png" alt="Model Training Results" width="700"/>
 </div>
 
 ## ⚙️ Installation
