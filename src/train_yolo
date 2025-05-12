@@ -5,7 +5,7 @@ model = YOLO('yolov12s.yaml')
 
 # Train the model with custom parameters
 results = model.train(
-    data=f'{dataset}/data.yaml',
+    data=f'{dataset}/data.yaml', # type: ignore
     epochs=50,  # Adjust epochs to 50 for faster convergence
     batch=16,   # Set batch size to 16 for better performance
     imgsz=640,  # Use 640x640 image size for better performance (adjust based on GPU)
