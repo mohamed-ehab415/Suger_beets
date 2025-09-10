@@ -4,18 +4,7 @@
   <img src="https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2024/02/Sugar-beet-plants-growing-on-black-fen-soil-Cambridgeshire-early-June-c-GNP-web.jpg" alt="Sugar Beet Classification Banner" width="800"/>
 </div>
 
-## 📋 Table of Contents
-- [Project Overview](##project-overview)
-- [Dataset](##dataset)
-- [Features](##features)
-- [Model Architecture](##model-architecture)
-- [Performance Metrics](##performance-metrics)
-- [Installation](##installation)
-- [Usage](##usage)
-- [Training Process](##training-process)
-- [Results](##results)
-- [Future Work](##future-work)
-- [Acknowledgments](#acknowledgments)
+
 
 ## 🌱 Project Overview
 This project implements a robust computer vision solution to classify sugar beets and weeds in agricultural fields. By leveraging YOLOv12s, a state-of-the-art object detection model, the system accurately identifies and differentiates between sugar beets and various weed types, enabling precision agriculture applications.
@@ -118,3 +107,4 @@ The model achieved impressive results:
 - Roboflow for providing the comprehensive Sugar Beets dataset
 - Ultralytics for the powerful YOLOv12s implementation
 - Kaggle for computing resources used during model training
+
